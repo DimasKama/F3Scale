@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "f3scale",
+  "version": "${version}",
+  "name": "F3Scale",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "sources": "https://github.com/DimasKama/F3Scale"
+  },
+  "license": "MIT",
+  "icon": "assets/f3scale/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.dimaskama.f3scale.client.F3Scale"
+    ],
+    "modmenu": [
+      "io.github.dimaskama.f3scale.client.integration.F3ScaleModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "f3scale.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
