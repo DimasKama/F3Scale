@@ -52,7 +52,9 @@ public class F3ScaleConfigScreen extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        renderBackground(context);
+        if (client.world == null)  {
+            renderBackgroundTexture(context);
+        }
         context.drawCenteredTextWithShadow(textRenderer, title, width >>> 1, 12, 0xFFFFFFFF);
         super.render(context, mouseX, mouseY, delta);
     }

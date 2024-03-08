@@ -3,7 +3,7 @@
   "id": "f3scale",
   "version": "${version}",
   "name": "F3Scale",
-  "description": "",
+  "description": "Modify debug font scale",
   "authors": [],
   "contact": {
     "sources": "https://github.com/DimasKama/F3Scale"
